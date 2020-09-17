@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">OpenLab</string>
+    <string name="txt_welcome">Bienvenidos</string>
+    <string name="txt_team">Equipo</string>
+
+    <!-- Welcome text-->
+    <string name="txt_welcome_to_open_lab">Bienvenidos a OpenLab</string>
+    <string name="txt_welcome_to_open_lab_description">Somos una comunidad tecnológica que busca fomentar el aprendizaje colaborativo a través de eventos, talleres y capacitaciones a todo el que desee aprender con pasión</string>
+    <string name="txt_open_lab_mission">Misión</string>
+    <string name="txt_open_lab_mission_description">Ser una comunidad que busca despertar la curiosidad por la tecnología, el deseo por aprender y la pasión por compartir.</string>
+    <string name="txt_open_lab_vision">Visión</string>
+    <string name="txt_open_lab_vision_description">Ser el núcleo de aprendizaje e innovación por excelencia de la comunidad Tecnológica en el Perú.</string>
+    <string name="txt_open_lab_collaborative_approach">Enfoque colaborativo</string>
+    <string name="txt_open_lab_collaborative_approach_description">1.Creemos que la colaboración entre los miembros de la comunidad es lo que nos permite realizar todas nuestras actividades.\n\n2.Gracias a todos nuestros colaboradores podemos realizar actividades de calidad.\n\n3.¿Qué esperas? <b>!Sé parte de nuestra comunidad!</b></string>
+
+    <!-- Team text-->
+    <string-array name="team_member_names">
+        <!-- Member 1-->
+        <item>Edwin Deza</item>
+        <!-- Member 2-->
+        <item>José Miguel Zea</item>
+        <!-- Member 3-->
+        <item>Bryam Soto</item>
+        <!-- Member 4-->
+        <item>Luis Vertiz</item>
+        <!-- Member 5-->
+        <item>Kath Caillahua</item>
+        <!-- Member 6-->
+        <item>Carlos Villagomez</item>
+    </string-array>
+    <string-array name="team_member_descriptions">
+        <!-- Member 1-->
+        <item>Soy analista y web developer, especialista en Product Management. Me gustan las comunidades, la educación y todo lo relacionado con la tecnología.</item>
+        <!-- Member 2-->
+        <item>Soy un mobile developer especializado en Android. Viajero de afición y San Marquino de corazón. Me encanta compartir conocimiento con la gente.</item>
+        <!-- Member 3-->
+        <item>Soy mobile developer y co-fundador de OpenLab UNMSM, me apasiona enseñar todo lo que voy aprendiendo, orgulloso de ser sanmarquino y amante de las montañas.</item>
+        <!-- Member 4-->
+        <item>Soy mobile Developer especializado en Android. Me apasiona aprender nuevas tecnologías y compartirlo en comunidades. Me gusta viajar y experimentar nuevos retos.</item>
+        <!-- Member 5-->
+        <item>Soy android mobile developer, apasionada por la tecnología, me gusta aprender constantemente cosas nuevas y poder compartirlas con la comunidad. Amo los gatos, me encanta viajar y vivir de forma divertida cada día.</item>
+        <!-- Member 6-->
+        <item>Soy Web Developer, especializado en Javascript. Me apasiona aprender nuevas tecnologías y aplicarlas en proyectos geniales.</item>
+    </string-array>
+
+</resources>
