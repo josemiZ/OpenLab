@@ -28,9 +28,9 @@ class TeamAdapter : BaseAdapter<TeamAdapter.TeamViewHolder, TeamModel>() {
     class TeamViewHolder(
         private val item: ItemTeamBinding
     ) : RecyclerView.ViewHolder(item.root) {
-        fun bind(model: TeamModel) {
-            item.model = model
-            item.executePendingBindings()
+        fun bind(model: TeamModel) = with(item) {
+            this.model = model
+            executePendingBindings()
         }
     }
 

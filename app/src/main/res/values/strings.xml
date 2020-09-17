@@ -12,6 +12,7 @@
     <string name="txt_open_lab_vision_description">Ser el núcleo de aprendizaje e innovación por excelencia de la comunidad Tecnológica en el Perú.</string>
     <string name="txt_open_lab_collaborative_approach">Enfoque colaborativo</string>
     <string name="txt_open_lab_collaborative_approach_description">1.Creemos que la colaboración entre los miembros de la comunidad es lo que nos permite realizar todas nuestras actividades.\n\n2.Gracias a todos nuestros colaboradores podemos realizar actividades de calidad.\n\n3.¿Qué esperas? <b>!Sé parte de nuestra comunidad!</b></string>
+    <string name="txt_contact_us">Contáctanos</string>
 
     <!-- Team text-->
     <string-array name="team_member_names">

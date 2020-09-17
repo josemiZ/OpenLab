@@ -12,16 +12,19 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_contact_us"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:contentDescription="@string/txt_contact_us"
             android:src="@drawable/ic_baseline_chat_32"
+            app:elevation="12dp"
             app:fabSize="normal"
-            app:elevation="6dp"
+            app:pressedTranslationZ="6dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

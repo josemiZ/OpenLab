@@ -2,6 +2,7 @@ package com.josemiz.openlab.main.welcome
 
 import android.content.Intent
 import android.net.Uri
+import androidx.recyclerview.widget.RecyclerView
 import com.josemiz.openlab.BR
 import com.josemiz.openlab.R
 import com.josemiz.openlab.base.BaseViewModelFragment
@@ -14,6 +15,21 @@ class WelcomeFragment :
 
     override fun setup() {
         dataBinding.rvWelcome.adapter = WelcomeAdapter()
+        dataBinding.rvWelcome.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
+                when {
+                    dy > 0 && dataBinding.fabContactUs.isShown -> {
+                        // Scroll Down
+                        dataBinding.fabContactUs.hide()
+                    }
+                    dy < 0 && !dataBinding.fabContactUs.isShown -> {
+                        // Scroll Up
+                        dataBinding.fabContactUs.show()
+                    }
+                }
+            }
+        })
         dataBinding.fabContactUs.setOnClickListener {
             val url = "https://www.facebook.com/OpenLabPERU"
             Intent(Intent.ACTION_VIEW).apply {
