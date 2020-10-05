@@ -19,15 +19,13 @@ abstract class BaseViewModelFragment<V : ViewModel, T : ViewDataBinding>() :
         bindViewModel()?.let {
             dataBinding.setVariable(it, viewModel)
         }
-        viewModelClass()
         setupObservers()
     }
 
     //We use this as a hack that checks the actual parameters of the child class
     @Suppress("UNCHECKED_CAST")
-    private fun viewModelClass(): KClass<V> {
-        return ((javaClass.genericSuperclass as ParameterizedType)
-            .actualTypeArguments[ARGUMENT] as Class<V>).kotlin
+    private fun viewModelClass(): KClass<V> = with(javaClass.genericSuperclass as ParameterizedType){
+        return (this.actualTypeArguments[ARGUMENT] as Class<V>).kotlin
     }
 
     abstract fun bindViewModel(): Int?
